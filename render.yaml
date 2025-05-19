@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: streamlit-playwright-app
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash setup.sh && streamlit run app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
