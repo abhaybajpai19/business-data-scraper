@@ -104,7 +104,7 @@ def scrape_data(search_query, total=5, progress_callback=None):
 # Streamlit UI
 st.set_page_config(page_title="Google Maps Business Scraper", layout="centered")
 st.title("📍 Google Maps Business Scraper")
-st.markdown("Enter a business search query (e.g., **Cafe in Lucknow**)")
+st.markdown("Enter a business search query (e.g., **Jewellery shop in Kanpur**)")
 
 query = st.text_input("Search Query")
 total = st.slider("How many results to fetch?", 5, 100, 10)
